@@ -152,6 +152,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PatternsOOP.cpp" />
+    <ClCompile Include="TestClad.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestClad.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
