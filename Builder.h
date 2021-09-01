@@ -96,7 +96,7 @@ public:
 	}
 
 	void createBlueRay() const override
-	{						  
+	{
 		product->parts.push_back(new BlueRay);
 	}
 
@@ -119,4 +119,65 @@ public:
 		builder->createBlueRay();
 	}
 
+	void BuilderMiniMC()
+	{
+		builder->createRadio();
+		builder->createCD();
+	}
+
+};
+
+class ManualMC
+{
+	string text = "Manual for Music Center\n";
+public:
+	void addText(string text)
+	{
+		this->text += text;
+	}
+
+	string getText() { return  text; }
+};
+
+class ManualMusicCenter : public Builder
+{
+	ManualMC* product;
+public:
+
+	ManualMusicCenter()
+	{
+		Reset();
+	}
+
+	~ManualMusicCenter()
+	{
+		delete product;
+	}
+
+	void Reset()
+	{
+		product = new ManualMC;
+	}
+
+	ManualMC* getResult()
+	{
+		ManualMC* result = product;
+		Reset();
+		return result;
+	}
+
+	void createRadio() const override
+	{
+		product->addText("Dlya zapyska radio najmite 1\n");
+	}
+
+	void createCD() const override
+	{
+		product->addText("Dlya zapyska CD najmite 2\n");
+	}
+
+	void createBlueRay() const override
+	{
+		product->addText("Dlya zapyska BlueRay najmite 3\n");
+	}
 };
