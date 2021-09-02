@@ -7,7 +7,7 @@ using namespace std;
 
 class Logger
 {
-	Logger();
+	Logger(){};
 	static Logger* obj;
 public:
 	static Logger* getInstance();

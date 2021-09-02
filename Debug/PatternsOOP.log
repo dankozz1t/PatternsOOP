@@ -1,3 +1,2 @@
 ﻿  main.cpp
-main.obj : error LNK2019: ссылка на неразрешенный внешний символ "private: __thiscall Logger::Logger(void)" (??0Logger@@AAE@XZ) в функции "public: static class Logger * __cdecl Logger::getInstance(void)" (?getInstance@Logger@@SAPAV1@XZ)
-C:\Users\37194\source\repos\PatternsOOP\Debug\PatternsOOP.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+  PatternsOOP.vcxproj -> C:\Users\37194\source\repos\PatternsOOP\PatternsOOP\Debug\PatternsOOP.exe

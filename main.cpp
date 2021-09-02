@@ -3,13 +3,64 @@
 #include "Builder.h"
 #include "FactoryMethod.h"
 #include "Singleton.h"
+#include "AbstractFactory.h"
+#include "Task_DVD_Disk.h"
 
 using namespace std;
 
 int main()
 {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	setlocale(0, "");
 
+	DVD_Drive* drive = new DVD_Drive;
+	Disk* disk = new Disk;
+	disk->diskSize = 1024;
+
+	cout << "РАЗМЕР ДИСКА: " << disk->diskSize << " мб" << endl;
+
+	cout << "\nзаписываю...\n\n";
+
+	string temp;
+	cout << "ЗАПИСЬ Дата: ";
+	cin >> temp;
+
+	unsigned size;
+	cout << "ЗАПИСЬ размер (мб): ";
+	cin >> size;
+	cin.ignore();
+
+	drive->open(disk);
+
+
+	
+	drive->write(disk, temp,size);
+	cout << "\n...записал\n";
+
+
+	cout << "\nсчитываю..\n\n";
+	drive->read(disk);
+	cout << "\n...считал\n";
+	
+	return 0;
+}
+
+int mainAbstractFactory()
+{
+	setlocale(0, "");
+
+
+	//Car* car = new Car;
+	//CreatorCar* creator = new CreatorCar;
+	//creator->setFactory(new SportCarFactory);
+	//creator->create(car);
+	//car->print();
+
+	//Car* bmw = new Car;
+	//creator->setFactory(new BMWFactory);
+	//creator->create(bmw);
+	//bmw->print();
 
 
 	return 0;
