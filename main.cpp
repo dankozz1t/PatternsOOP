@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	SetConsoleCP(1251);
+	SetConsoleCP(1251); //у
 	SetConsoleOutputCP(1251);
 	setlocale(0, "");
 
