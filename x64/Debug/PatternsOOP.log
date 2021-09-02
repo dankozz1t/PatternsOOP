@@ -1,4 +1,0 @@
-﻿  main.cpp
-main.obj : error LNK2019: ссылка на неразрешенный внешний символ "private: __cdecl Logger::Logger(void)" (??0Logger@@AEAA@XZ) в функции "public: static class Logger * __cdecl Logger::getInstance(void)" (?getInstance@Logger@@SAPEAV1@XZ)
-main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __cdecl Car::Car(void)" (??0Car@@QEAA@XZ) в функции main
-C:\Users\37194\source\repos\PatternsOOP\PatternsOOP\x64\Debug\PatternsOOP.exe : fatal error LNK1120: неразрешенных внешних элементов: 2

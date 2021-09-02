@@ -4,13 +4,13 @@
 #include "FactoryMethod.h"
 #include "Singleton.h"
 #include "AbstractFactory.h"
-#include "Task_DVD_Disk.h"
+#include "Task_DVD_Disk/Task_DVD_Disk.h"
 
 using namespace std;
 
-int main()
+int mainDVD()
 {
-	SetConsoleCP(1251); //у
+	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	setlocale(0, "");
 
@@ -18,31 +18,50 @@ int main()
 	Disk* disk = new Disk;
 	disk->diskSize = 1024;
 
-	cout << "РАЗМЕР ДИСКА: " << disk->diskSize << " мб" << endl;
+	int menu = 0;
+	do
+	{
+		cout << "\nРАЗМЕР ДИСКА: " << disk->diskSize << " мб\n" << endl;
+		cout << "1 - Вставить диск" << endl;
+		cout << "2 - Записать данные" << endl;
+		cout << "3 - Считать данные" << endl;
+		cout << "4 - Извлечь диск" << endl;
+		cout << "5 - Очистить диск" << endl;
+		cout << "6 - Выход" << endl;
 
-	cout << "\nзаписываю...\n\n";
+		cout << "Введите: "; cin >> menu;
+		cout << endl;
 
-	string temp;
-	cout << "ЗАПИСЬ Дата: ";
-	cin >> temp;
+		system("cls");
 
-	unsigned size;
-	cout << "ЗАПИСЬ размер (мб): ";
-	cin >> size;
-	cin.ignore();
+		switch (menu)
+		{
+		case 1: drive->insert(disk); break;
+		case 2:
+		{
+			if (disk->isOpen())
+			{
+				cout << "ЗАПИСЬ Дата: ";
+				string tempData;  cin >> tempData;
+				cout << "ЗАПИСЬ размер (мб): ";
+				unsigned tempSize; cin >> tempSize;
+				cin.ignore();
 
-	drive->open(disk);
+				drive->write(disk, tempData, tempSize);
+			}
+			else
+				cout << "Не могу найти диск\n";
+			break;
+		}
+		case 3:	drive->read(disk); break;
+		case 4:	drive->erase(disk); break;
+		case 5: drive->clear(disk); break;
+		}
 
+		system("pause");
 
-	
-	drive->write(disk, temp,size);
-	cout << "\n...записал\n";
+	} while (menu != 6);
 
-
-	cout << "\nсчитываю..\n\n";
-	drive->read(disk);
-	cout << "\n...считал\n";
-	
 	return 0;
 }
 
@@ -51,16 +70,16 @@ int mainAbstractFactory()
 	setlocale(0, "");
 
 
-	//Car* car = new Car;
-	//CreatorCar* creator = new CreatorCar;
-	//creator->setFactory(new SportCarFactory);
-	//creator->create(car);
-	//car->print();
+	Car* car = new Car;
+	CreatorCar* creator = new CreatorCar;
+	creator->setFactory(new SportCarFactory);
+	creator->create(car);
+	car->print();
 
-	//Car* bmw = new Car;
-	//creator->setFactory(new BMWFactory);
-	//creator->create(bmw);
-	//bmw->print();
+	Car* bmw = new Car;
+	creator->setFactory(new BMWFactory);
+	creator->create(bmw);
+	bmw->print();
 
 
 	return 0;
