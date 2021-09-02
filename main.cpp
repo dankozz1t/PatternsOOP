@@ -1,9 +1,9 @@
 ﻿#include <iostream>
 #include <Windows.h>
-#include "Builder.h"
-#include "FactoryMethod.h"
-#include "Singleton.h"
-#include "AbstractFactory.h"
+#include "Patterns/Builder.h"
+#include "Patterns/FactoryMethod.h"
+#include "Patterns/Singleton.h"
+#include "Patterns/AbstractFactory.h"
 #include "Task_DVD_Disk/Task_DVD_Disk.h"
 
 using namespace std;

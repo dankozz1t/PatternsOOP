@@ -154,10 +154,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractFactory.h" />
-    <ClInclude Include="Builder.h" />
-    <ClInclude Include="FactoryMethod.h" />
-    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Patterns\AbstractFactory.h" />
+    <ClInclude Include="Patterns\Builder.h" />
+    <ClInclude Include="Patterns\FactoryMethod.h" />
+    <ClInclude Include="Patterns\Singleton.h" />
     <ClInclude Include="Task_DVD_Disk\Task_DVD_Disk.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
