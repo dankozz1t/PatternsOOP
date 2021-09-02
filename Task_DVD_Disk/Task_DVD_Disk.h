@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <string>
 #include <iostream>
 #include <Windows.h>
@@ -43,12 +43,12 @@ public:
 		int t = rand() % 4;
 		if (t)
 		{
-			cout << "Äèñê óñïåøíî âñòàâëåí" << endl;
+			cout << "Ð”Ð¸ÑÐº ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð²ÑÑ‚Ð°Ð²Ð»ÐµÐ½" << endl;
 			dis->readable = true;
 		}
 		else
 		{
-			cout << " EROR_*@&^$(+_-+( ÍåYyäà4íàÿ ïîïûTêà, ï0ïðîáYYéòå ñíîâà.. \n";
+			cout << " EROR_*@&^$(+_-+( ÐÐµYyÐ´Ð°4Ð½Ð°Ñ Ð¿Ð¾Ð¿Ñ‹TÐºÐ°, Ð¿0Ð¿Ñ€Ð¾Ð±YYÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°.. \n";
 			dis->readable = false;
 		}
 		disk = dis;
@@ -58,11 +58,11 @@ public:
 	{
 		if (dis->readable)
 		{
-			cout << "Äèñê óñïåøíî èçâëå÷åí" << endl;
+			cout << "Ð”Ð¸ÑÐº ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¸Ð·Ð²Ð»ÐµÑ‡ÐµÐ½" << endl;
 			dis->readable = false;
 		}
 		else
-			cout << "Íå ìîãó íàéòè äèñê" << endl;
+			cout << "ÐÐµ Ð¼Ð¾Ð³Ñƒ Ð½Ð°Ð¹Ñ‚Ð¸ Ð´Ð¸ÑÐº" << endl;
 
 		disk = dis;
 	}
@@ -73,16 +73,16 @@ public:
 		{
 			if (!di->empty())
 			{
-				cout << "Äàííûå äèñêà: " << di->getData() << endl;
-				cout << "Ðàçìåð äàííûõ äèñêà: " << di->getDataSize() << " ìá" << endl;
-				cout << "Ñâîáîäíîãî ìåñòà îñòàëîñü: " << di->getDiskSize() << " ìá" << endl;
-				cout << "Õýø: " << di->getHash() << endl;
+				cout << "Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð¸ÑÐºÐ°: " << di->getData() << endl;
+				cout << "Ð Ð°Ð·Ð¼ÐµÑ€ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð´Ð¸ÑÐºÐ°: " << di->getDataSize() << " Ð¼Ð±" << endl;
+				cout << "Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð¼ÐµÑÑ‚Ð° Ð¾ÑÑ‚Ð°Ð»Ð¾ÑÑŒ: " << di->getDiskSize() << " Ð¼Ð±" << endl;
+				cout << "Ð¥ÑÑˆ: " << di->getHash() << endl;
 			}
 			else
-				cout << "Ïóñòîé äèñê\n";
+				cout << "ÐŸÑƒÑÑ‚Ð¾Ð¹ Ð´Ð¸ÑÐº\n";
 		}
 		else
-			cout << "Íå ìîãó íàéòè äèñê\n";
+			cout << "ÐÐµ Ð¼Ð¾Ð³Ñƒ Ð½Ð°Ð¹Ñ‚Ð¸ Ð´Ð¸ÑÐº\n";
 	}
 
 	void write(Disk* di, string& data, unsigned& size)
@@ -95,11 +95,11 @@ public:
 				di->dataSize = size;
 				di->diskSize -= size;
 			}
-			else cout << "Íåäîñòàòî÷íî ïàìÿòè\n";
+			else cout << "ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð¿Ð°Ð¼ÑÑ‚Ð¸\n";
 
 		}
 		else
-			cout << "Äèñê ÍÅ ïóñòîé\n";
+			cout << "Ð”Ð¸ÑÐº ÐÐ• Ð¿ÑƒÑÑ‚Ð¾Ð¹\n";
 
 	}
 
@@ -110,10 +110,10 @@ public:
 			di->data.erase();
 			di->diskSize += di->dataSize;
 			di->dataSize = 0;
-			cout << " Äèñê óñïåøíî î÷èùåí " << endl;
+			cout << " Ð”Ð¸ÑÐº ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½ " << endl;
 		}
 		else
-			cout << " Äèñê ÏÓÑÒÎÉ " << endl;
+			cout << " Ð”Ð¸ÑÐº ÐŸÐ£Ð¡Ð¢ÐžÐ™ " << endl;
 
 	}
 
@@ -133,15 +133,15 @@ int main()
 	int menu = 0;
 	do
 	{
-		cout << "\nÐÀÇÌÅÐ ÄÈÑÊÀ: " << disk->diskSize << " ìá\n" << endl;
-		cout << "1 - Âñòàâèòü äèñê" << endl;
-		cout << "2 - Çàïèñàòü äàííûå" << endl;
-		cout << "3 - Ñ÷èòàòü äàííûå" << endl;
-		cout << "4 - Èçâëå÷ü äèñê" << endl;
-		cout << "5 - Î÷èñòèòü äèñê" << endl;
-		cout << "6 - Âûõîä" << endl;
+		cout << "\nÐ ÐÐ—ÐœÐ•Ð  Ð”Ð˜Ð¡ÐšÐ: " << disk->diskSize << " Ð¼Ð±\n" << endl;
+		cout << "1 - Ð’ÑÑ‚Ð°Ð²Ð¸Ñ‚ÑŒ Ð´Ð¸ÑÐº" << endl;
+		cout << "2 - Ð—Ð°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ" << endl;
+		cout << "3 - Ð¡Ñ‡Ð¸Ñ‚Ð°Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ" << endl;
+		cout << "4 - Ð˜Ð·Ð²Ð»ÐµÑ‡ÑŒ Ð´Ð¸ÑÐº" << endl;
+		cout << "5 - ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð´Ð¸ÑÐº" << endl;
+		cout << "6 - Ð’Ñ‹Ñ…Ð¾Ð´" << endl;
 
-		cout << "Ââåäèòå: "; cin >> menu;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ: "; cin >> menu;
 		cout << endl;
 		
 		system("cls");
@@ -153,16 +153,16 @@ int main()
 		{
 			if (disk->isOpen())
 			{
-				cout << "ÇÀÏÈÑÜ Äàòà: ";
+				cout << "Ð—ÐÐŸÐ˜Ð¡Ð¬ Ð”Ð°Ñ‚Ð°: ";
 				string tempData;  cin >> tempData;
-				cout << "ÇÀÏÈÑÜ ðàçìåð (ìá): ";
+				cout << "Ð—ÐÐŸÐ˜Ð¡Ð¬ Ñ€Ð°Ð·Ð¼ÐµÑ€ (Ð¼Ð±): ";
 				unsigned tempSize; cin >> tempSize;
 				cin.ignore();
 
 				drive->write(disk, tempData, tempSize);
 			}
 			else
-				cout << "Íå ìîãó íàéòè äèñê\n";
+				cout << "ÐÐµ Ð¼Ð¾Ð³Ñƒ Ð½Ð°Ð¹Ñ‚Ð¸ Ð´Ð¸ÑÐº\n";
 			break;
 		}
 		case 3:	drive->read(disk); break;
