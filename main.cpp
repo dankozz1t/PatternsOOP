@@ -1,13 +1,16 @@
 ﻿#include <iostream>
 #include <Windows.h>
 
-#include "Adapter.h"
+#include "Task_DVD_Disk/Task_DVD_Disk.h"
+
 #include "Patterns/Builder.h"
 #include "Patterns/FactoryMethod.h"
 #include "Patterns/Singleton.h"
 #include "Patterns/AbstractFactory.h"
-#include "Task_DVD_Disk/Task_DVD_Disk.h"
 #include "Patterns/Prototype.h"
+#include "Patterns/Adapter.h"
+#include "Patterns/Bridge.h"
+
 
 using namespace std;
 
@@ -19,9 +22,32 @@ void goToRush()
 }
 
 
-int main()
+int mainBridge()
 {
 	goToRush();
+
+	Programmer * freelancer = new Freelance(new CPPLanguage());
+	freelancer->work();
+	freelancer->getMoney();
+
+	cout << " ------------------- " << endl;
+
+	freelancer->setLanguage(new CSharpLanguage());
+	freelancer->work();
+	freelancer->getMoney();
+
+	cout << " ------------------- " << endl;
+
+
+	Programmer * office = new Office(new CPPLanguage());
+	office->work();
+	office->getMoney();
+
+	cout << " ------------------- " << endl;
+
+	office->setLanguage(new CSharpLanguage());
+	office->work();
+	office->getMoney();
 
 	return 0;
 }

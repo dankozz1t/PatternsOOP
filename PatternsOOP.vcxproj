@@ -154,8 +154,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Adapter.h" />
     <ClInclude Include="Patterns\AbstractFactory.h" />
+    <ClInclude Include="Patterns\Adapter.h" />
+    <ClInclude Include="Patterns\Bridge.h" />
     <ClInclude Include="Patterns\Builder.h" />
     <ClInclude Include="Patterns\FactoryMethod.h" />
     <ClInclude Include="Patterns\Prototype.h" />

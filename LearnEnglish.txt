@@ -2,3 +2,8 @@ Prototype - прототип
 Meal - еда
 Rectangle - прямоугольник
 Target - цель
+Camel - верблюд
+Override - отвергать
+Bridge - мост
+Execute - выполнить
+Dot - точка

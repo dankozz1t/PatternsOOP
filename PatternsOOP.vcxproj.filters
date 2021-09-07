@@ -44,7 +44,10 @@
     <ClInclude Include="Patterns\Prototype.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
-    <ClInclude Include="Adapter.h">
+    <ClInclude Include="Patterns\Bridge.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Adapter.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
   </ItemGroup>
