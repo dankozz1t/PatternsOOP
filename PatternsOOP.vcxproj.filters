@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Patterns">
+      <UniqueIdentifier>{6653b7f2-ed7e-430a-bea8-e465379c2cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Task">
+      <UniqueIdentifier>{0b625ff3-cd76-49a1-8f1d-f808ba4962ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,19 +27,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Task_DVD_Disk\Task_DVD_Disk.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Task</Filter>
     </ClInclude>
     <ClInclude Include="Patterns\AbstractFactory.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
     <ClInclude Include="Patterns\Builder.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
     <ClInclude Include="Patterns\FactoryMethod.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
     <ClInclude Include="Patterns\Singleton.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Prototype.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter.h">
+      <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

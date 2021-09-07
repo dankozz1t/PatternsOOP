@@ -1,0 +1,4 @@
+Prototype - прототип
+Meal - еда
+Rectangle - прямоугольник
+Target - цель

@@ -120,7 +120,7 @@ public:
 
 };
 
-int main()
+int mainTaskDISK()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);

@@ -1,18 +1,70 @@
 ﻿#include <iostream>
 #include <Windows.h>
+
+#include "Adapter.h"
 #include "Patterns/Builder.h"
 #include "Patterns/FactoryMethod.h"
 #include "Patterns/Singleton.h"
 #include "Patterns/AbstractFactory.h"
 #include "Task_DVD_Disk/Task_DVD_Disk.h"
+#include "Patterns/Prototype.h"
 
 using namespace std;
 
-int mainDVD()
+void goToRush()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	setlocale(0, "");
+}
+
+
+int main()
+{
+	goToRush();
+
+	return 0;
+}
+
+int mainAdapter()
+{
+	goToRush();
+
+	Adapter::Driver * driver = new Adapter::Driver();
+	Adapter::Car * car = new Adapter::Car;
+	driver->travel(car);
+	
+	Adapter::Camel * camel = new Adapter::Camel();
+	Adapter::Adapter* adapter = new Adapter::Adapter(camel);
+
+	driver->travel(adapter);
+
+	return 0;
+}
+
+void method(Prototype * figure)
+{
+	Prototype * figureCopy = figure->clone();
+	figure->print();
+
+}
+
+int mainPrototype()
+{
+	goToRush();
+
+	Prototype * f = new _Rectangle(12, 5);
+	method(f);
+
+	f->print();
+
+	return 0;
+}
+
+
+int mainDVD()
+{
+	goToRush();
 
 	DVD_Drive* drive = new DVD_Drive;
 	Disk* disk = new Disk;
@@ -67,7 +119,7 @@ int mainDVD()
 
 int mainAbstractFactory()
 {
-	setlocale(0, "");
+	goToRush();
 
 
 	Car* car = new Car;
@@ -87,7 +139,7 @@ int mainAbstractFactory()
 
 int mainSingleton()
 {
-	setlocale(0, "");
+	goToRush();
 
 	Logger * logger = Logger::getInstance();
 	logger->sendMessage("Error #45");
@@ -99,7 +151,7 @@ int mainSingleton()
 
 int mainFactoryMethod()
 {
-	setlocale(0, "");
+	goToRush();
 
 	//Creator * creator = new TrackCreator;
 	//Transport* truck = creator->create();
@@ -136,9 +188,7 @@ int mainFactoryMethod()
 
 int mainBuilder()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-	setlocale(0, "");
+	goToRush();
 
 	Director* director = new Director; //Создали директора
 
