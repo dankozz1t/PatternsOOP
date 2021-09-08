@@ -80,3 +80,32 @@ public:
 };
 
 
+//int mainBridge()
+//{
+//	goToRush();
+//
+//	Programmer* freelancer = new Freelance(new CPPLanguage());
+//	freelancer->work();
+//	freelancer->getMoney();
+//
+//	cout << " ------------------- " << endl;
+//
+//	freelancer->setLanguage(new CSharpLanguage());
+//	freelancer->work();
+//	freelancer->getMoney();
+//
+//	cout << " ------------------- " << endl;
+//
+//
+//	Programmer* office = new Office(new CPPLanguage());
+//	office->work();
+//	office->getMoney();
+//
+//	cout << " ------------------- " << endl;
+//
+//	office->setLanguage(new CSharpLanguage());
+//	office->work();
+//	office->getMoney();
+//
+//	return 0;
+//}

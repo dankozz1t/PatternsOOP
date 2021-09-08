@@ -181,3 +181,33 @@ public:
 		product->addText("Dlya zapyska BlueRay najmite 3\n");
 	}
 };
+
+
+//int mainBuilder()
+//{
+//	//goToRush();
+//
+//	//Director* director = new Director; //Создали директора
+//
+//	//MusicCenterBuilder* mcBuilder = new MusicCenterBuilder; //Создали билдер
+//
+//	//director->setBuilder(mcBuilder); //Дали директору билдер
+//	//director->BuilderMegaMC(); //Дали директору задачу строить центрМЕга
+//
+//	//MusicCenter* mc = mcBuilder->getResult(); //Создали музкЦентр и забрали его у директора 
+//	//mc->print();
+//
+//	//ManualMusicCenter* manualBuilder = new ManualMusicCenter; //Создали инструкию
+//
+//	//director->setBuilder(manualBuilder); //Отдали директору билдер инструкции
+//	//director->BuilderMegaMC(); //Сказали создать инструкцию мега центра
+//
+//	//ManualMC* manual = manualBuilder->getResult();
+//	//cout << manual->getText() << endl;
+//
+//	////director->BuilderMiniMC();
+//	////MusicCenter* mc1 = mcBuilder->getResult();
+//	////mc1->print();
+//
+//	return  0;
+//}

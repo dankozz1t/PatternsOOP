@@ -46,3 +46,23 @@ public:
 
 
 };
+
+//
+//void method(Prototype* figure)
+//{
+//	Prototype* figureCopy = figure->clone();
+//	figure->print();
+//
+//}
+
+//int mainPrototype()
+//{
+//	goToRush();
+//
+//	Prototype* f = new _Rectangle(12, 5);
+//	method(f);
+//
+//	f->print();
+//
+//	return 0;
+//}

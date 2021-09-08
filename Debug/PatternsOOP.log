@@ -1,2 +1,3 @@
 ﻿  main.cpp
-  PatternsOOP.vcxproj -> C:\Users\37194\source\repos\PatternsOOP\PatternsOOP\Debug\PatternsOOP.exe
+C:\Users\alexd\OneDrive\Документы\GitHub\PatternsOOP\Task_Universal_Editor\Task_Universal_Editor.h(96,21): warning C4018: <: несоответствие типов со знаком и без знака
+  PatternsOOP.vcxproj -> C:\Users\alexd\OneDrive\Документы\GitHub\PatternsOOP\Debug\PatternsOOP.exe

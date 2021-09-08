@@ -70,3 +70,40 @@ public:
 		return new Ship;
 	}
 };
+
+//int mainFactoryMethod()
+//{
+//	//goToRush();
+//
+//	//Creator * creator = new TrackCreator;
+//	//Transport* truck = creator->create();
+//	//truck->delivery("Kyiv");
+//
+//	//creator = new ShipCreator;
+//	//Transport *ship = creator->create();
+//	//ship->delivery("Odessa");
+//
+//
+//
+//	//Creator * creator;
+//	//Transport* transport;
+//
+//	//cout << "0 - Truck, 1 - Ship \n";
+//	//cout << "Введите тип транспорта: ";
+//	//bool n;  cin >> n;
+//
+//	//if (n)
+//	//	creator = new TrackCreator;
+//	//else
+//	//	creator = new ShipCreator;
+//
+//	//string address;
+//	//cout << "Адресс: ";
+//	//cin >> address;
+//
+//
+//	//transport = creator->create();
+//	//transport->delivery(address);
+//
+//	return 0;
+//}

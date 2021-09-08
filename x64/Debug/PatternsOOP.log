@@ -1,2 +1,4 @@
 ﻿  main.cpp
-C:\Users\37194\source\repos\PatternsOOP\PatternsOOP\main.cpp : fatal error C1083: Не удается открыть файл созданный компилятором: C:\Users\37194\source\repos\PatternsOOP\PatternsOOP\x64\Debug\main.obj: Permission denied,
+  LINK : не найден или не выполнена сборка C:\Users\alexd\OneDrive\Документы\GitHub\PatternsOOP\x64\Debug\PatternsOOP.exe при последней инкрементной компоновке; выполняется полная компоновка
+MSVCRTD.lib(exe_main.obj) : error LNK2019: ссылка на неразрешенный внешний символ main в функции "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ).
+C:\Users\alexd\OneDrive\Документы\GitHub\PatternsOOP\x64\Debug\PatternsOOP.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

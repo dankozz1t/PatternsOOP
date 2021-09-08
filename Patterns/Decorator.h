@@ -67,3 +67,32 @@ public:
 	int getPrice() override { return pizza->getPrice() + 30; }
 
 };
+
+//
+//int mainDocorator()
+//{
+//	goToRush();
+//
+//	cout << "\n-------Ïèööà ¹1-------" << endl;
+//
+//	Pizza* pizza = new Italian();
+//	pizza = new Tomato(pizza);
+//	pizza = new Cheese(pizza);
+//
+//	cout << pizza->getName() << endl;
+//	cout << "---------------------" << endl;
+//	cout << " Öåíà: " << pizza->getPrice() << endl;
+//
+//
+//	cout << "\n-------Ïèöà ¹2-------" << endl;
+//
+//	Pizza* pizza2 = new American();
+//	pizza2 = new Cheese(pizza);
+//	pizza2 = new Cheese(pizza);
+//
+//	cout << pizza2->getName() << endl;
+//	cout << "---------------------" << endl;
+//	cout << " Öåíà: " << pizza2->getPrice() << endl;
+//
+//	return 0;
+//}

@@ -65,3 +65,20 @@ namespace Adapter
 	};
 
 }
+
+
+//int mainAdapter()
+//{
+//	goToRush();
+//
+//	Adapter::Driver* driver = new Adapter::Driver();
+//	Adapter::Car* car = new Adapter::Car;
+//	driver->travel(car);
+//
+//	Adapter::Camel* camel = new Adapter::Camel();
+//	Adapter::Adapter* adapter = new Adapter::Adapter(camel);
+//
+//	driver->travel(adapter);
+//
+//	return 0;
+//}

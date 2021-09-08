@@ -53,3 +53,18 @@ public:
 		vs->F5();
 	}
 };
+
+
+//int mainFacade()
+//{
+//	goToRush();
+//
+//	Programmer_* pr = new Programmer_();
+//	TextEditor* te = new TextEditor;
+//	Compillee* com = new Compillee;
+//	Debuger* deb = new Debuger;
+//	Facade* fa = new Facade(te, com, deb);
+//	pr->createApp(fa);
+//
+//	return 0;
+//}

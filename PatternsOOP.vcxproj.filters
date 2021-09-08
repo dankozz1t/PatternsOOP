@@ -59,5 +59,8 @@
     <ClInclude Include="Patterns\Facade.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
+    <ClInclude Include="Task_Universal_Editor\Task_Universal_Editor.h">
+      <Filter>Исходные файлы\Task</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

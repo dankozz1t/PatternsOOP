@@ -32,3 +32,14 @@ inline void Logger::sendMessage(string message)
 }
 
 
+//int mainSingleton()
+//{
+//	//goToRush();
+//
+//	//Logger * logger = Logger::getInstance();
+//	//logger->sendMessage("Error #45");
+//	//logger->sendMessage("Error #404");
+//
+//
+//	return 0;
+//}

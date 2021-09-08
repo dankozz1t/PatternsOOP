@@ -204,3 +204,23 @@ public:
 	}
 
 };
+//
+//int mainAbstractFactory()
+//{
+//	goToRush();
+//
+//
+//	Car* car = new Car;
+//	CreatorCar* creator = new CreatorCar;
+//	creator->setFactory(new SportCarFactory);
+//	creator->create(car);
+//	car->print();
+//
+//	Car* bmw = new Car;
+//	creator->setFactory(new BMWFactory);
+//	creator->create(bmw);
+//	bmw->print();
+//
+//
+//	return 0;
+//}
