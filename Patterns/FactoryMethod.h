@@ -70,8 +70,3 @@ public:
 		return new Ship;
 	}
 };
-
-
-
-
-

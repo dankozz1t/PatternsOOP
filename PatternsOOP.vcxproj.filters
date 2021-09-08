@@ -50,5 +50,14 @@
     <ClInclude Include="Patterns\Adapter.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
+    <ClInclude Include="Patterns\Decorator.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Composite.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Facade.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

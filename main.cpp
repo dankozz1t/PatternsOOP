@@ -10,7 +10,9 @@
 #include "Patterns/Prototype.h"
 #include "Patterns/Adapter.h"
 #include "Patterns/Bridge.h"
-
+#include "Patterns/Decorator.h"
+#include "Patterns/Composite.h"
+#include "Patterns/Facade.h"
 
 using namespace std;
 
@@ -21,6 +23,79 @@ void goToRush()
 	setlocale(0, "");
 }
 
+int main()
+{
+	goToRush();
+
+	Programmer_ *pr = new Programmer_();
+	TextEditor* te = new TextEditor;
+	Compillee* com = new Compillee;
+	Debuger * deb = new Debuger;
+	Facade* fa =new Facade(te, com, deb);
+	pr->createApp(fa);
+
+	return 0;
+}
+
+int mainComposite()
+{
+	goToRush();
+
+	Componentt* fs = new Directory("^FileSystem");
+	Componentt* discC = new Directory("disk C");
+	Componentt* folder1 = new Directory("$ Folder 1");
+	Componentt* folder2 = new Directory("$ Folder 2");
+	Componentt* folder3 = new Directory("$ Folder 3");
+	Componentt* folder4 = new Directory("$ Folder 4");
+	Componentt* file1 = new File("* File 1");
+	Componentt* file2 = new File("* File 2");
+	Componentt* file3 = new File("* File 3");
+
+	fs->addComponent(discC);
+	discC->addComponent(folder1);
+	discC->addComponent(folder2);
+	discC->addComponent(folder3);
+	discC->addComponent(file1);
+	folder1->addComponent(folder4);
+	folder4->addComponent(file3);
+
+	fs->print();
+
+
+
+
+
+	return 0;
+}
+
+
+int mainDocorator()
+{
+	goToRush();
+
+	cout << "\n-------Пицца №1-------" << endl;
+
+	Pizza * pizza = new Italian();
+	pizza = new Tomato(pizza);
+	pizza = new Cheese(pizza);
+
+	cout << pizza->getName() << endl;
+	cout << "---------------------" << endl;
+	cout << " Цена: " << pizza->getPrice() << endl;
+
+
+	cout << "\n-------Пица №2-------" << endl;
+
+	Pizza * pizza2 = new American();
+	pizza2 = new Cheese(pizza);
+	pizza2 = new Cheese(pizza);
+
+	cout << pizza2->getName() << endl;
+	cout << "---------------------" << endl;
+	cout << " Цена: " << pizza2->getPrice() << endl;
+
+	return 0;
+}
 
 int mainBridge()
 {
@@ -59,7 +134,7 @@ int mainAdapter()
 	Adapter::Driver * driver = new Adapter::Driver();
 	Adapter::Car * car = new Adapter::Car;
 	driver->travel(car);
-	
+
 	Adapter::Camel * camel = new Adapter::Camel();
 	Adapter::Adapter* adapter = new Adapter::Adapter(camel);
 
@@ -204,7 +279,7 @@ int mainFactoryMethod()
 	string address;
 	cout << "Адресс: ";
 	cin >> address;
-	
+
 
 	transport = creator->create();
 	transport->delivery(address);

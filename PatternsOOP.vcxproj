@@ -158,6 +158,9 @@
     <ClInclude Include="Patterns\Adapter.h" />
     <ClInclude Include="Patterns\Bridge.h" />
     <ClInclude Include="Patterns\Builder.h" />
+    <ClInclude Include="Patterns\Composite.h" />
+    <ClInclude Include="Patterns\Decorator.h" />
+    <ClInclude Include="Patterns\Facade.h" />
     <ClInclude Include="Patterns\FactoryMethod.h" />
     <ClInclude Include="Patterns\Prototype.h" />
     <ClInclude Include="Patterns\Singleton.h" />
