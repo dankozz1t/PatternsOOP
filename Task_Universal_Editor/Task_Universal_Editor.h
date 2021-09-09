@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <string>
 #include <iostream>
 #include <vector>
@@ -23,11 +23,11 @@ public:
 		while (menu != 3)
 		{
 			system("cls");
-			cout << " 1 - печатать" << endl;
-			cout << " 2 - перевести на другу строку" << endl;
-			cout << " 3 - закрыть" << endl;
+			cout << " 1 - РїРµС‡Р°С‚Р°С‚СЊ" << endl;
+			cout << " 2 - РїРµСЂРµРІРµСЃС‚Рё РЅР° РґСЂСѓРіСѓ СЃС‚СЂРѕРєСѓ" << endl;
+			cout << " 3 - Р·Р°РєСЂС‹С‚СЊ" << endl;
 
-			cout << "Введите: "; cin >> menu;
+			cout << "Р’РІРµРґРёС‚Рµ: "; cin >> menu;
 			switch (menu)
 			{
 			case 1: write(); break;
@@ -75,7 +75,7 @@ class TextEditor :public Editor
 public:
 	void create() override
 	{
-		cout << "\nВведите имя файла: ";
+		cout << "\nР’РІРµРґРёС‚Рµ РёРјСЏ С„Р°Р№Р»Р°: ";
 		string nameFile; cin >> nameFile;
 
 		TextFile* fil = new TextFile(nameFile);
@@ -86,18 +86,18 @@ public:
 
 	void open() override
 	{
-		cout << "Существующие файлы: ";
+		cout << "РЎСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ С„Р°Р№Р»С‹: ";
 		for (auto& c : files)
 			cout << c->getName() << ", ";
 		
-		cout << "\n\nВведите имя файла: ";
+		cout << "\n\nР’РІРµРґРёС‚Рµ РёРјСЏ С„Р°Р№Р»Р°: ";
 		string nameFile; cin >> nameFile;
 
 		for (int i = 0; i < files.size(); i++)
 		{
 			if (files[i]->getName() == nameFile)
 			{
-				cout << " * Вы открыли файл: " << files[i]->getName() << endl;
+				cout << " * Р’С‹ РѕС‚РєСЂС‹Р»Рё С„Р°Р№Р»: " << files[i]->getName() << endl;
 				acviteFiles = i;
 				
 				files[acviteFiles]->work();
@@ -108,17 +108,17 @@ public:
 	void save() override
 	{
 		files[acviteFiles]->print();
-		cout << " * СОХРАНЕНО!!!! * " << endl;
+		cout << " * РЎРћРҐР РђРќР•РќРћ!!!! * " << endl;
 	}
 
 	void saveNewName() override
 	{
-		cout << " * Сохранил под новым именем" << endl;
+		cout << " * РЎРѕС…СЂР°РЅРёР» РїРѕРґ РЅРѕРІС‹Рј РёРјРµРЅРµРј" << endl;
 	}
 
 	void close() override
 	{
-		cout << " * Закрыл" << endl;
+		cout << " * Р—Р°РєСЂС‹Р»" << endl;
 	}
 	
 	void print() override
@@ -134,32 +134,32 @@ class GraphicsEditor :public Editor
 public:
 	void create() override
 	{
-		cout << " * Создал графический редактор" << endl;
+		cout << " * РЎРѕР·РґР°Р» РіСЂР°С„РёС‡РµСЃРєРёР№ СЂРµРґР°РєС‚РѕСЂ" << endl;
 	}
 
 	void open() override
 	{
-		cout << " * Отрыл графический редактор" << endl;
+		cout << " * РћС‚СЂС‹Р» РіСЂР°С„РёС‡РµСЃРєРёР№ СЂРµРґР°РєС‚РѕСЂ" << endl;
 	}
 
 	void save() override
 	{
-		cout << " * Сохранил" << endl;
+		cout << " * РЎРѕС…СЂР°РЅРёР»" << endl;
 	}
 
 	void saveNewName() override
 	{
-		cout << " * Сохранил под новым именем" << endl;
+		cout << " * РЎРѕС…СЂР°РЅРёР» РїРѕРґ РЅРѕРІС‹Рј РёРјРµРЅРµРј" << endl;
 	}
 
 	void close() override
 	{
-		cout << " * Закрыл" << endl;
+		cout << " * Р—Р°РєСЂС‹Р»" << endl;
 	}
 	
 	void print() override
 	{
-		cout << " * Посмотрел" << endl;
+		cout << " * РџРѕСЃРјРѕС‚СЂРµР»" << endl;
 	}
 };
 
@@ -167,7 +167,7 @@ class Creator
 {
 public:
 	virtual ~Creator() {}
-	virtual Editor* createEditor() const = 0; //Фабричный метод
+	virtual Editor* createEditor() const = 0; //Р¤Р°Р±СЂРёС‡РЅС‹Р№ РјРµС‚РѕРґ
 	Editor* create()
 	{
 		Editor* editor = this->createEditor();
@@ -180,7 +180,7 @@ class TextEditorCreator : public Creator
 public:
 	Editor* createEditor() const override
 	{
-		cout << " * Вы создали текстовый редактор" << endl;
+		cout << " * Р’С‹ СЃРѕР·РґР°Р»Рё С‚РµРєСЃС‚РѕРІС‹Р№ СЂРµРґР°РєС‚РѕСЂ" << endl;
 		return new TextEditor;
 	}
 };
@@ -190,7 +190,7 @@ class GraphicsEditorCreator : public Creator
 public:
 	Editor* createEditor() const override
 	{
-		cout << " * Вы создали текстовый редактор" << endl;
+		cout << " * Р’С‹ СЃРѕР·РґР°Р»Рё С‚РµРєСЃС‚РѕРІС‹Р№ СЂРµРґР°РєС‚РѕСЂ" << endl;
 		return new GraphicsEditor;
 	}
 };
@@ -205,16 +205,16 @@ int mainUniversal_Editor()
 	do
 	{
 		system("cls");
-		cout << " * 1 - Создать " << endl;
-		cout << " * 2 - Открыть " << endl;
-		cout << "   3 - Сохранить " << endl;
-		cout << "   4 - Сохранить под новым именем " << endl;
-		cout << " * 5 - Показать " << endl;
-		cout << "   6 - Закрыть " << endl;
-		cout << " * 7 - Выход " << endl;
+		cout << " * 1 - РЎРѕР·РґР°С‚СЊ " << endl;
+		cout << " * 2 - РћС‚РєСЂС‹С‚СЊ " << endl;
+		cout << "   3 - РЎРѕС…СЂР°РЅРёС‚СЊ " << endl;
+		cout << "   4 - РЎРѕС…СЂР°РЅРёС‚СЊ РїРѕРґ РЅРѕРІС‹Рј РёРјРµРЅРµРј " << endl;
+		cout << " * 5 - РџРѕРєР°Р·Р°С‚СЊ " << endl;
+		cout << "   6 - Р—Р°РєСЂС‹С‚СЊ " << endl;
+		cout << " * 7 - Р’С‹С…РѕРґ " << endl;
 
-		cout << "Введите: "; cin >> menu;
-		//TODO: другое меню для Графического (Палитра)
+		cout << "Р’РІРµРґРёС‚Рµ: "; cin >> menu;
+		//TODO: РґСЂСѓРіРѕРµ РјРµРЅСЋ РґР»СЏ Р“СЂР°С„РёС‡РµСЃРєРѕРіРѕ (РџР°Р»РёС‚СЂР°)
 
 		switch (menu)
 		{

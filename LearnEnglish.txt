@@ -7,3 +7,9 @@ Override - отвергать
 Bridge - мост
 Execute - выполнить
 Dot - точка
+_
+Flyweight - Наилегчайший вес
+floor - этаж
+Handler - обработчик
+Chain  - цепочка
+send - отправить

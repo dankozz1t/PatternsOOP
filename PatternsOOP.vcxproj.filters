@@ -62,5 +62,14 @@
     <ClInclude Include="Task_Universal_Editor\Task_Universal_Editor.h">
       <Filter>Исходные файлы\Task</Filter>
     </ClInclude>
+    <ClInclude Include="Patterns\Flyweight.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Proxy.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\ChainOfCommand.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
