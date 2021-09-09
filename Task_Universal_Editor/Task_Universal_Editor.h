@@ -167,7 +167,7 @@ class Creator
 {
 public:
 	virtual ~Creator() {}
-	virtual Editor* createEditor() const = 0; //Фабричный метод
+	virtual Editor* createEditor() const = 0;
 	Editor* create()
 	{
 		Editor* editor = this->createEditor();
