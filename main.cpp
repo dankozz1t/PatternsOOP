@@ -2,6 +2,7 @@
 #include <Windows.h>
 
 #include "Patterns/ChainOfCommand.h"
+#include "Patterns/Observer.h"
 #include "Task_Universal_Editor/Task_Universal_Editor.h"
 
 using namespace std;
@@ -11,6 +12,13 @@ void goToRush()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	setlocale(0, "");
+}
+
+int main()
+{
+	goToRush();
+
+	return 0;
 }
 
 
@@ -27,14 +35,12 @@ void goToRush()
 //	return 0;
 //}
 
-
-
-int main()
-{	
-	mainUniversal_Editor();
-	
-	return 0;
-}
+//int main()
+//{	
+//	mainUniversal_Editor();
+//	
+//	return 0;
+//}
 
 
 

@@ -164,9 +164,11 @@
     <ClInclude Include="Patterns\Facade.h" />
     <ClInclude Include="Patterns\FactoryMethod.h" />
     <ClInclude Include="Patterns\Flyweight.h" />
+    <ClInclude Include="Patterns\Observer.h" />
     <ClInclude Include="Patterns\Prototype.h" />
     <ClInclude Include="Patterns\Proxy.h" />
     <ClInclude Include="Patterns\Singleton.h" />
+    <ClInclude Include="Patterns\Strategy.h" />
     <ClInclude Include="Task_DVD_Disk\Task_DVD_Disk.h" />
     <ClInclude Include="Task_Universal_Editor\Task_Universal_Editor.h" />
   </ItemGroup>

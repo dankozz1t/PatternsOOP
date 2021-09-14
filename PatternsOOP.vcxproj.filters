@@ -41,9 +41,6 @@
     <ClInclude Include="Patterns\Singleton.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
-    <ClInclude Include="Patterns\Prototype.h">
-      <Filter>Исходные файлы\Patterns</Filter>
-    </ClInclude>
     <ClInclude Include="Patterns\Bridge.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
@@ -69,6 +66,15 @@
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
     <ClInclude Include="Patterns\ChainOfCommand.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Observer.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Prototype.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Strategy.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
   </ItemGroup>
