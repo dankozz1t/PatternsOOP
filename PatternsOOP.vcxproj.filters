@@ -77,5 +77,14 @@
     <ClInclude Include="Patterns\Strategy.h">
       <Filter>Исходные файлы\Patterns</Filter>
     </ClInclude>
+    <ClInclude Include="Patterns\Command.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\State.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\TemplateMethod.h">
+      <Filter>Исходные файлы\Patterns</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

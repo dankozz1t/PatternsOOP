@@ -159,6 +159,7 @@
     <ClInclude Include="Patterns\Bridge.h" />
     <ClInclude Include="Patterns\Builder.h" />
     <ClInclude Include="Patterns\ChainOfCommand.h" />
+    <ClInclude Include="Patterns\Command.h" />
     <ClInclude Include="Patterns\Composite.h" />
     <ClInclude Include="Patterns\Decorator.h" />
     <ClInclude Include="Patterns\Facade.h" />
@@ -168,7 +169,9 @@
     <ClInclude Include="Patterns\Prototype.h" />
     <ClInclude Include="Patterns\Proxy.h" />
     <ClInclude Include="Patterns\Singleton.h" />
+    <ClInclude Include="Patterns\State.h" />
     <ClInclude Include="Patterns\Strategy.h" />
+    <ClInclude Include="Patterns\TemplateMethod.h" />
     <ClInclude Include="Task_DVD_Disk\Task_DVD_Disk.h" />
     <ClInclude Include="Task_Universal_Editor\Task_Universal_Editor.h" />
   </ItemGroup>

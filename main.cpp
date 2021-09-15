@@ -1,14 +1,13 @@
 ﻿#include <iostream>
 #include <Windows.h>
 
-#include "Patterns/ChainOfCommand.h"
-#include "Patterns/Observer.h"
-#include "Task_Universal_Editor/Task_Universal_Editor.h"
+#include "Patterns/TemplateMethod.h"
 
 using namespace std;
 
 void goToRush()
 {
+	SetConsoleTitleA("DesignPatterns");
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	setlocale(0, "");
@@ -18,6 +17,7 @@ int main()
 {
 	goToRush();
 
+	
 	return 0;
 }
 
