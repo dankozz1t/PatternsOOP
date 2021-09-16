@@ -165,6 +165,8 @@
     <ClInclude Include="Patterns\Facade.h" />
     <ClInclude Include="Patterns\FactoryMethod.h" />
     <ClInclude Include="Patterns\Flyweight.h" />
+    <ClInclude Include="Patterns\Mediator.h" />
+    <ClInclude Include="Patterns\Memento.h" />
     <ClInclude Include="Patterns\Observer.h" />
     <ClInclude Include="Patterns\Prototype.h" />
     <ClInclude Include="Patterns\Proxy.h" />
@@ -172,6 +174,7 @@
     <ClInclude Include="Patterns\State.h" />
     <ClInclude Include="Patterns\Strategy.h" />
     <ClInclude Include="Patterns\TemplateMethod.h" />
+    <ClInclude Include="Patterns\Visitor.h" />
     <ClInclude Include="Task_DVD_Disk\Task_DVD_Disk.h" />
     <ClInclude Include="Task_Universal_Editor\Task_Universal_Editor.h" />
   </ItemGroup>
